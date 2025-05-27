@@ -65,14 +65,14 @@ document.querySelector(".volume").addEventListener("input", (e) => {
 
 async function getSongs() {
   //extracting songs
-  let tracks = await fetch("http://127.0.0.1:5500/Files/Songs/");
+  let tracks = await fetch("/Files/Songs/");
   let response = await tracks.text();
   let div = document.createElement("div");
   div.innerHTML = response;
 
   //For storing Song images
   //extracting album covers
-  let tnails = await fetch("http://127.0.0.1:5500/Files/Thumbnails/");
+  let tnails = await fetch("/Files/Thumbnails/");
   response = await tnails.text();
   let tdiv = document.createElement("div");
   tdiv.innerHTML = response;
