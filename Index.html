@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/Utility.css" />
+  </head>
+  <!-- xmlns="http://www.w3.org/2000/svg" -->
+  <body>
+    <header>
+      <div class="logocontainer">
+        <img class="Logo" src="Icons/Logo.svg" alt="" />
+      </div>
+      <div class="Homesearch">
+        <div class="Home">
+          <img src="Icons/HomeUnUsed.svg" alt="" />
+        </div>
+        <div class="SearchBar">
+          <div class="search">
+            <img src="Icons/Search.svg" alt="" />
+            <input
+              class="input"
+              type="text"
+              placeholder="What do you want to play?"
+            />
+          </div>
+          <div class="browse">
+            <img src="Icons/BrowseUnUsed.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="options">
+        <div class="premium">Premium</div>
+        <div class="support">Support</div>
+        <div class="download">Download</div>
+        <div class="line">|</div>
+        <div class="install">
+          <img class="installimg" src="Icons/install.svg" alt="" />Install app
+        </div>
+        <div class="signup">Sign up</div>
+        <button type="button">Log in</button>
+      </div>
+    </header>
+    <div class="main">
+      <div class="library">
+        <div class="libheader">
+          <div class="yourlibrary">Your Library</div>
+          <div class="addlibrary">
+            <img class="add" src="Icons/Add.svg" alt="" />
+          </div>
+        </div>
+        <div class="createplaylist">
+          <span>
+            <h4>Create your first playlist</h4>
+            <p>It's easy,we'll help you</p>
+            <button type="button">Create playlist</button>
+          </span>
+        </div>
+        <div class="browsepodcast">
+          <span>
+            <h4>Let's find some podcasts to follow</h4>
+            <p>We'll keep you updated on new episodes</p>
+            <button type="button">Browse podcasts</button>
+          </span>
+        </div>
+        <footer>
+          <a href="https://www.spotify.com/in-en/legal/">
+            <span>Legal</span>
+          </a>
+          <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+            <span>Safety &amp; Privacy Center</span>
+          </a>
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+            <span>Privacy Policy</span>
+          </a>
+          <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+            <span>Cookies</span>
+          </a>
+
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+            <span>About Ads</span>
+          </a>
+
+          <a href="https://www.spotify.com/in-en/accessibility/">
+            <span>Accessibility</span>
+          </a>
+          <div class="cookie">
+            <a
+              draggable="false"
+              href="https://www.spotify.com/legal/cookies-policy/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>Cookies</span>
+            </a>
+          </div>
+          <div class="language">
+            <img src="Icons/Language.svg" alt="" />
+            <span>English</span>
+          </div>
+        </footer>
+      </div>
+      <div class="contents">
+        <h1>Favourites</h1>
+        <div class="cardcontainer"></div>
+      </div>
+    </div>
+
+    <div class="playbar">
+        <div class="playing" id="playing">
+
+        </div>
+        <div class="controls">
+            <div class="playback">
+                <div id="shuffle"><img src="Icons/shuffle.svg" alt=""></div>
+                <div id="playprevious"><img src="Icons/pre.svg" alt=""></div>
+                <div id="play" ><img id="playimg" src="Icons/Playmusic.svg" alt=""></div>
+                <div id="playnext"><img src="Icons/next.svg" alt=""></div>
+                <div id="repeat"><img src="Icons/repeat.svg" alt=""></div>
+            </div>
+            <div class="crrt">
+                <div class="played">00:00</div>
+                <div class="seekbar">
+                    <input type="range" min="0" max="100" value="0" class="slider seek">
+                </div>
+                <div class="willplay">00:00</div>
+            </div>
+        </div>
+        <div class="volumecontrols">
+            <img src="Icons/volume.svg" alt="">
+            <div class="volumebar">
+                <input type="range" min="0" max="100" value="100" class="slider volume">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="Scripts/script.js"></script>
+  </body>
+</html>
